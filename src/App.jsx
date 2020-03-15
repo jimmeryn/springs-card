@@ -1,10 +1,14 @@
 import * as React from "react";
 import "./styles/style.css";
+import Nav from "./components/navbar/nav";
+import Footer from "./components/footer/footer";
+import Container from "./components/container";
 
 const App = () => (
   <div className="App">
-    <header className="App-header">Left Menu App</header>
-    <div className="Container"></div>
+    <Nav />
+    <Container />
+    <Footer />
   </div>
 );
 

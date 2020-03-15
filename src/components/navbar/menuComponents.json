@@ -1,0 +1,8 @@
+{
+  "components": [
+    { "id": 0, "name": "Oferta" },
+    { "id": 1, "name": "Partnerzy" },
+    { "id": 2, "name": "Kontakt" },
+    { "id": 3, "name": "Język" }
+  ]
+}
