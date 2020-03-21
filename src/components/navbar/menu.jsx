@@ -1,4 +1,5 @@
 import React from "react";
+import Hamb from "./hamb";
 
 const menuComponents = require("./menuComponents.json").components;
 
@@ -11,6 +12,10 @@ const renderMenu = menuComponents =>
     );
   });
 
-const Menu = () => <ul className="nav-right">{renderMenu(menuComponents)}</ul>;
+const Menu = () => (
+  <ul className="nav-right">
+    {renderMenu(menuComponents)} <Hamb />
+  </ul>
+);
 
 export default Menu;
