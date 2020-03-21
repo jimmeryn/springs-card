@@ -3,7 +3,7 @@ import Gallery from "./images";
 
 const Ofert = () => (
   <div className="Ofert">
-    <h1>Oferta</h1>
+    <h1>Ofert</h1>
     <p>
       M.E.C rozwija się z inicjatywy profesjonalistów, którzy zdecydowali się
       podzielić swoimi długoletnimi doświadczeniami w przestrzeni modernizacji

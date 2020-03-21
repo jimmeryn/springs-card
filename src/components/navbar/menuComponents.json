@@ -1,8 +1,7 @@
 {
   "components": [
-    { "id": 0, "name": "Oferta" },
-    { "id": 1, "name": "Partnerzy" },
-    { "id": 2, "name": "Kontakt" },
-    { "id": 3, "name": "Język" }
+    { "id": 0, "name": "Ofert" },
+    { "id": 1, "name": "Partners" },
+    { "id": 2, "name": "Contact" }
   ]
 }
