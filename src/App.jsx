@@ -1,13 +1,19 @@
 import * as React from "react";
 import "./styles/style.css";
-import Nav from "./components/navbar/nav";
-import Footer from "./components/footer/footer";
-import Container from "./components/container";
+import About from "./components/About";
+import Background from "./components/Background";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Info from "./components/Info";
 
 const App = () => (
   <div className="App">
-    <Nav />
-    <Container />
+    <Background />
+    <Header />
+    <Hero />
+    <About />
+    <Info />
     <Footer />
   </div>
 );

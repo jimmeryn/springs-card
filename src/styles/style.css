@@ -24,141 +24,23 @@ html {
   min-height: 100%;
 }
 
-.Container {
-  box-sizing: border-box;
-  padding: 10vh;
-  max-width: 100vw;
-  margin-top: auto;
+header {
 }
 
-.menu {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
+.background {
 }
 
-.nav {
-  display: flex;
-  top: 0;
+.hero {
 }
 
-.nav-right {
-  width: 90%;
-  list-style-type: none;
-  margin: 0;
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
+.about {
 }
 
-.nav-option {
-  display: block;
-  text-align: center;
-  align-content: right;
-  padding: 0px 2vw;
-  text-decoration: none;
-  color: #000;
-
-  margin-top: auto;
-  margin-bottom: auto;
+.info {
 }
 
-.nav-option:hover,
-.nav-option:visited:hover {
-  color: rgb(200, 200, 200);
-  cursor: pointer;
-}
-
-.nav-option:visited {
-  color: initial;
-}
-
-.Logo {
-  margin: 15px;
-}
-
-.Hamb {
-  display: none;
-  border: none;
-  width: 90%;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: transparent;
-}
-
-.Hamb:hover {
-  cursor: pointer;
-}
-
-.Dropdown {
-  width: 100%;
-  visibility: hidden;
-  display: none;
-  box-shadow: 1px 8px 7px -7px black;
-  padding: 5px;
-  overflow-y: auto;
-}
-
-.footer {
-  background-color: #555;
-  display: flex;
-  padding: 15px;
-}
-
-.footer-right {
-  width: 100%;
-}
-
-.footer-right-list {
-  list-style: none;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.image {
-  padding: 1vh;
-  max-height: 40vh;
-}
-
-.topButton {
-  /* display: none; */
-  visibility: visible;
-  display: block;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  color: black;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 100%;
-}
-
-.topButton-visible {
-  visibility: visible;
-  display: block;
+footer {
 }
 
 @media screen and (max-width: 640px) {
-  .nav-right {
-    display: none;
-  }
-  .Hamb {
-    display: flex;
-  }
-  .Dropdown {
-    visibility: visible;
-    display: block;
-  }
-  .Container {
-    margin-top: 140px; /* Olny when dropdown is open*/
-  }
 }
