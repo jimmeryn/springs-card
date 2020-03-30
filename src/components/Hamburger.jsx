@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Hamburger = () => {
-  const [hamActive, setHamActive] = useState(false);
-  const hamClass = `hamburger${hamActive ? "--active" : ""}`;
-
+const Hamburger = ({ activateHamburger }) => {
+  // const hamClass = `hamburger${isHamburgerActive ? "--active" : ""}`;
   return (
-    <button className={hamClass} onClick={() => setHamActive(!hamActive)}>
+    <button className="hamburger" onClick={activateHamburger}>
       <span className="hamburger-box">
         <span className="hamburger-inner"></span>
       </span>

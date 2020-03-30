@@ -6,7 +6,6 @@ const createButtons = (names, activeButton, setActiveButton) =>
 
 const MenuList = () => {
   const [activeButton, setActiveButton] = useState(0);
-
   return (
     <ul className="menu-list">
       {createButtons(

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Footer = () => (
-  <footer>
+const Footer = ({ reference }) => (
+  <footer ref={reference}>
     <h1>Footer</h1>
   </footer>
 );

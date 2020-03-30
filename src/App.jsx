@@ -7,15 +7,17 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 
-const App = () => (
-  <div className="App">
-    <Background />
-    <Header />
-    <Hero />
-    <About />
-    <Info />
-    <Footer />
-  </div>
-);
+const App = () => {
+  return (
+    <div className="App">
+      <Background />
+      <Header />
+      <Hero />
+      <About />
+      <Info />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
