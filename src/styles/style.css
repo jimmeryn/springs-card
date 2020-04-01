@@ -1,0 +1,285 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+  min-height: 100%;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: grid;
+  text-align: center;
+  min-height: 100%;
+}
+
+.background {
+  display: none;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  padding: 2vh;
+}
+
+.header-container {
+  width: 30%;
+  display: flex;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+}
+
+.logo-main {
+  margin: auto;
+  padding: 0;
+}
+
+.logo-underline {
+  width: 100%;
+  height: 2px;
+  background-color: #4563f3;
+  display: block;
+}
+
+.logo-sub {
+  text-align: right;
+  margin: 0;
+  letter-spacing: 0.3em;
+}
+
+.info {
+  padding: 10vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-text-wrapper {
+  width: 50%;
+  height: 100%;
+  display: table;
+  padding: 10vh;
+}
+
+.hero-text {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-img {
+  max-width: 50%;
+}
+
+.footer {
+  display: flex;
+  padding: 10vh;
+}
+
+.footer-logo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info {
+  width: 70%;
+}
+
+menu {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 50%;
+}
+
+.menu-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-button {
+  width: 100%;
+  max-height: 40px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+  color: #bbc3cc;
+}
+
+.nav-button:hover {
+  color: #4563f3;
+}
+
+.active {
+  color: #4563f3;
+}
+
+.nav-button > h3 {
+  margin: 0;
+}
+
+.hamburger,
+.hamburger--active {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .logo {
+    width: 30%;
+    min-width: 150px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .hero-text-wrapper {
+    width: 100%;
+    height: 50%;
+  }
+
+  .header-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    display: block;
+    margin: 0;
+    border: 0;
+  }
+
+  .hamburger-box {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    border-radius: 15px;
+  }
+
+  .hamburger-inner {
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.1s 0.2s ease-in-out;
+  }
+
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    transition: transform 0.2s 0.2s ease-in-out;
+  }
+
+  .hamburger-inner::before {
+    top: -7px;
+  }
+
+  .hamburger-inner::after {
+    top: 7px;
+  }
+
+  .hamburger--active {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0;
+    border: 0;
+  }
+
+  .hamburger--active .hamburger-inner {
+    background-color: transparent;
+  }
+
+  .hamburger--active .hamburger-inner::before {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger--active .hamburger-inner::after {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-list--open {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list > .nav-button {
+    padding: 0;
+  }
+}
