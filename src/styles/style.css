@@ -179,7 +179,9 @@ menu {
   }
 
   .hero-img {
-    max-width: 80%;
+    max-width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
   }
 
   .hero-text-wrapper {
