@@ -5,7 +5,7 @@ const Footer = ({ reference }) => (
   <footer ref={reference} className="footer">
     <div className="footer-logo">
       <Logo />
-      <div>© RSEMA Springs 2020, all rights reserved</div>
+      <div className="copyright">© RSEMA Springs 2020, all rights reserved</div>
     </div>
     <div className="footer-info">
       <div>

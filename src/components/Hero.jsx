@@ -14,7 +14,9 @@ const Hero = () => (
         </h4>
       </div>
     </div>
-    <img src={heroImg} alt="hero" className="hero-img" />
+    <div className="hero-img-wrapper">
+      <img src={heroImg} alt="hero" className="hero-img" />
+    </div>
   </div>
 );
 
