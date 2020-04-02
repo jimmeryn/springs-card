@@ -1,9 +1,8 @@
 import React from "react";
 
-const Hamburger = ({ activateHamburger }) => {
-  // const hamClass = `hamburger${isHamburgerActive ? "--active" : ""}`;
+const Hamburger = ({ activateHamburger, hamburgerClassName }) => {
   return (
-    <button className="hamburger" onClick={activateHamburger}>
+    <button className={hamburgerClassName} onClick={activateHamburger}>
       <span className="hamburger-box">
         <span className="hamburger-inner"></span>
       </span>

@@ -5,26 +5,35 @@ import Hamburger from "./Hamburger";
 
 const classNames = require("classnames");
 
-const Header = ({ pageReferences }) => {
-  let [isHamburgerActive, makeitactive] = useState(false);
+const Header = () => {
+  let [isHamburgerActive, changeHamburgerState] = useState(false);
+
   const hamburgerClassName = classNames("hamburger", [
-    { "--active": isHamburgerActive }
+    { active: isHamburgerActive }
   ]);
 
-  function activateHamburger() {
-    console.log("bvsdbajsbdjhbhj");
-    document.getElementsByClassName(hamburgerClassName).item(0).className
-      ? (isHamburgerActive = makeitactive(!isHamburgerActive))
-      : (isHamburgerActive = makeitactive(!isHamburgerActive));
-  }
+  const menuClassName =
+    window.innerWidth < 800
+      ? classNames("menu-list", [{ open: isHamburgerActive }])
+      : "menu-list";
+
+  const activateHamburger = () => {
+    changeHamburgerState(!isHamburgerActive);
+  };
 
   return (
     <header>
       <div className="header-container">
         <Logo />
-        <Hamburger activateHamburger={activateHamburger} />
+        <Hamburger
+          activateHamburger={activateHamburger}
+          hamburgerClassName={hamburgerClassName}
+        />
       </div>
-      <MenuList isHamburgerActive pageReferences={pageReferences} />
+      <MenuList
+        menuClassName={menuClassName}
+        activateHamburger={activateHamburger}
+      />
     </header>
   );
 };
