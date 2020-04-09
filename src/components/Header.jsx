@@ -5,7 +5,7 @@ import Hamburger from "./Hamburger";
 
 const classNames = require("classnames");
 
-const Header = () => {
+const Header = ({ executeScroll }) => {
   let [isHamburgerActive, changeHamburgerState] = useState(false);
 
   const hamburgerClassName = classNames("hamburger", [
@@ -33,6 +33,7 @@ const Header = () => {
       <MenuList
         menuClassName={menuClassName}
         activateHamburger={activateHamburger}
+        executeScroll={executeScroll}
       />
     </header>
   );

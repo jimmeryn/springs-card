@@ -6,11 +6,15 @@ import Hero from "./components/Hero";
 import Info from "./components/Info";
 
 const App = () => {
+  const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+
+  const infoRef = React.useRef(null);
+  const executeScroll = () => scrollToRef(infoRef);
   return (
     <div className="App">
-      <Header />
+      <Header executeScroll={executeScroll} />
       <Hero />
-      <Info />
+      <Info reference={infoRef} />
       <Footer />
     </div>
   );
