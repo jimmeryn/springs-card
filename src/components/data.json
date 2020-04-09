@@ -1,1 +1,27 @@
-{ "menuListItems": ["Contact Us"] }
+{
+  "menuListItems": { "pl": ["Kontakt"], "eng": ["Contact Us"] },
+  "heroMainText": {
+    "pl": "Produkujemy sprężyny zgodnie z Twoim zamówieniem",
+    "eng": "We manufacture springs that you need"
+  },
+  "heroText": {
+    "pl": "Nasze produkty i usługi mają na celu wzbudzić entuzjazm, poprawić jakość życia i pomóc w ochronie zasobów naturalnych. Chcemy zapewnić najwyższą jakość i niezawodność. Nasze sprężyny mają zapewnioną jakość i są produkowane zgodnie z najwyższymi standardami, po konkurencyjnych cenach.",
+    "eng": "Our products and services are designed to spark enthusiasm, improve quality of life, and help conserve natural resources. We want to deliver top quality and reliability. Our springs are quality assured, and produced to the highest Standards, at competitive prices."
+  },
+  "infoText": {
+    "pl": {
+      "ContactUs": "Skontaktuj się z Nami",
+      "Contact": "Kontakt",
+      "Telephone": "Telefon",
+      "Email": "Email",
+      "Adress": "Adres"
+    },
+    "eng": {
+      "ContactUs": "Contact Us",
+      "Contact": "Contact",
+      "Telephone": "Telephone",
+      "Email": "Email",
+      "Adress": "Adress"
+    }
+  }
+}

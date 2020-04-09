@@ -1,23 +1,24 @@
 import React from "react";
 import heroImg from "../img/Hero.png";
 
-const Hero = () => (
-  <div className="hero">
-    <div className="hero-text-wrapper">
-      <div className="hero-text">
-        <h1>We manufacture springs that you need</h1>
-        <h4>
-          Our products and services are designed to spark enthusiasm, improve
-          quality of life, and help conserve natural resources. We want to
-          deliver top quality and reliability. Our springs are quality assured,
-          and produced to the highest Standards, at competitive prices.
-        </h4>
+const Hero = () => {
+  const data = require("./data.json");
+  const language = window.navigator.userLanguage || window.navigator.language;
+  return (
+    <div className="hero">
+      <div className="hero-text-wrapper">
+        <div className="hero-text">
+          <h1>
+            {language === "pl" ? data.heroMainText.pl : data.heroMainText.eng}
+          </h1>
+          <h4>{language === "pl" ? data.heroText.pl : data.heroText.eng}</h4>
+        </div>
+      </div>
+      <div className="hero-img-wrapper">
+        <img src={heroImg} alt="hero" className="hero-img" />
       </div>
     </div>
-    <div className="hero-img-wrapper">
-      <img src={heroImg} alt="hero" className="hero-img" />
-    </div>
-  </div>
-);
+  );
+};
 
 export default Hero;
